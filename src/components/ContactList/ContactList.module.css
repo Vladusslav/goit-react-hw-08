@@ -1,0 +1,38 @@
+.contactList {
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 12px;
+    max-width: 380px;
+    min-width: 320px;
+    height: max-content;
+}
+
+@media only screen and (min-width: 386px) {
+    .contactList {
+        min-width: auto;
+        max-width: 100%;
+        width: 380px;
+    }
+}
+
+@media only screen and (max-width: 462px) {
+    .contactList {
+        max-width: 380px;
+        width: 100%;
+    }
+}
+
+.contactItem {
+    border-radius: 8px;
+    border: 2px solid var(--primary-color);
+    padding: 16px;
+    max-width: 380px;
+    min-width: 320px;
+}
+
+.noContactsMess {
+    text-align: center;
+    font-size: 18px;
+}
